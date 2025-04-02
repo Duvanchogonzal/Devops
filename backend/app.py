@@ -7,7 +7,7 @@ CORS(app)
 @app.route('/getMyInfo')
 def getMyInfo():
     value = {
-        "name": "Duvan",
+        "name": "Duvan Felipe",
         "lastname": "Gonzalez",
         "socialMedia":
         {
@@ -18,7 +18,7 @@ def getMyInfo():
             "githubUser": "duvanchogonzal"
         },
         "blog": "https://duvan",
-        "author": "Duvan Gonzalez",
+        "author": "Duvan Felipe Gonzalez",
     }
 
     return jsonify(value)
