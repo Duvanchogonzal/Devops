@@ -10,31 +10,42 @@
 
 <style>
 body {
-  background: url("https://www.w3schools.com/howto/img_link_tree_template2_bg.jpg"); /* The image used for background */
+  background-color: #121212; /* Fondo negro moderno */
+  color: #ffffff; /* Texto blanco */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container {
   width: 100%;
   height: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+  padding: 15px;
+  margin: 0 auto;
 }
 
 .links-container {
   display: flex;
   flex-direction: column;
-  jusify-content: center;
+  justify-content: center;
   align-items: center;
+  padding: 0 10px;
 }
 
 .links-container a {
   width: 80%;
+  margin-bottom: 12px;
+  background-color: #e53935; /* Rojo principal */
+  color: white;
+  text-align: center;
+  padding: 12px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(229, 57, 53, 0.3);
 }
 
-.w3-theme-l1:hover {
-  background-color: #ff0000 !important;
+.links-container a:hover {
+  background-color: #b71c1c; /* Rojo más oscuro */
 }
 
 .margin-top-2 {
@@ -44,29 +55,29 @@ body {
 .bottom {
   width: 100%;
   text-align: center;
-  width: auto;
   font-weight: bolder;
-}
-
-.bottom span {
-  color: #ee0014;
+  margin-top: 40px;
+  color: #ff5252;
 }
 
 .bottom svg {
-  stroke: #f31919;
-  fill: #e91f1f;
+  stroke: #ff5252;
+  fill: transparent;
 }
 
-@media (min-width: 768px) {
-  .link {
-    width: 100%;
-  }
+h4 {
+  color: #ff8a80;
 }
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
-  }
+
+.name {
+  font-size: 1.5rem;
+  display: inline-block;
+  background-color: #e53935;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
 }
+
 </style>
   </head>
   <body>
@@ -76,7 +87,7 @@ body {
       <!-- Image and name container. Change to your pictue here. -->
       <div style="text-align: center">
         
-        <p ><span class="name w3-padding w3-pink w3-round" style="font-weight: bolder;" id="name">Hola, no funcionas</span></p>
+        <h1 class="name" id="name">Hola, no funcionas</h1>
         <p style="font-weight: bolder;">¡Mira mis enlaces!</p>
       </div>
 
