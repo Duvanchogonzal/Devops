@@ -1,132 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-pink.css">    
-<title>Links website</title>
-<script src="https://unpkg.com/feather-icons"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <title>Links website</title>
+  <script src="https://unpkg.com/feather-icons"></script>
 
-<style>
-body {
-  background-color: #121212; /* Fondo negro moderno */
-  color: #ffffff; /* Texto blanco */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+  <style>
+    body {
+      background: url("https://www.w3schools.com/howto/img_link_tree_template2_bg.jpg");
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 
-.container {
-  width: 100%;
-  height: 100%;
-  padding: 15px;
-  margin: 0 auto;
-}
+    .container {
+      width: 100%;
+      height: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+    }
 
-.links-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0 10px;
-}
+    .links-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 10px;
+    }
 
-.links-container a {
-  width: 80%;
-  margin-bottom: 12px;
-  background-color: #e53935; /* Rojo principal */
-  color: white;
-  text-align: center;
-  padding: 12px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-  box-shadow: 0 4px 10px rgba(229, 57, 53, 0.3);
-}
+    .links-container a {
+      width: 80%;
+      background-color: #e53935;
+      color: white;
+      padding: 12px;
+      border-radius: 30px;
+      text-align: center;
+      font-weight: bold;
+      text-decoration: none;
+      margin-bottom: 12px;
+      box-shadow: 0 4px 10px rgba(229, 57, 53, 0.2);
+      transition: background-color 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
 
-.links-container a:hover {
-  background-color: #b71c1c; /* Rojo más oscuro */
-}
+    .links-container a:hover {
+      background-color: #b71c1c;
+    }
 
-.margin-top-2 {
-  margin-top: 32px;
-}
+    .margin-top-2 {
+      margin-top: 32px;
+    }
 
-.bottom {
-  width: 100%;
-  text-align: center;
-  font-weight: bolder;
-  margin-top: 40px;
-  color: #ff5252;
-}
+    .bottom {
+      width: 100%;
+      text-align: center;
+      font-weight: bolder;
+      margin-top: 40px;
+      color: #ff5252;
+    }
 
-.bottom svg {
-  stroke: #ff5252;
-  fill: transparent;
-}
+    .bottom svg {
+      stroke: #ff5252;
+      fill: transparent;
+    }
 
-h4 {
-  color: #ff8a80;
-}
+    h4 {
+      color: #ff8a80;
+    }
 
-.name {
-  font-size: 1.5rem;
-  display: inline-block;
-  background-color: #e53935;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 20px;
-}
+    .name {
+      font-size: 1.5rem;
+      display: inline-block;
+      background-color: #e53935;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 20px;
+    }
 
-</style>
-  </head>
-  <body>
-    <!-- Content container -->
-    <div class="container">
+    @media (min-width: 768px) {
+      .link {
+        width: 100%;
+      }
+    }
 
-      <!-- Image and name container. Change to your pictue here. -->
-      <div style="text-align: center">
-        
-        <h1 class="name" id="name">Hola, no funcionas</h1>
-        <p style="font-weight: bolder;">¡Mira mis enlaces!</p>
-      </div>
+    @media (min-width: 576px) {
+      .container {
+        max-width: 540px;
+      }
+    }
+  </style>
+</head>
+<body>
 
-      <!-- Links section 1. Replace the # inside of the "" with your links. -->
-      <h4 class="margin-top-2" style="text-align: center;">MIS REDES SOCIALES</h4>
-      <div class="links-container">
+  <!-- Content container -->
+  <div class="container">
 
-        <a id="facebookLink" href="#" class="w3-button w3-round-xlarge w3-theme-l1 w3-border link" target="_blank">Facebook</a>
-        <br>
-        <a id="instagramUser" href="#" class="w3-button w3-round-xlarge w3-theme-l1 w3-border link" target="_blank">Instagram</a>
-        <br>
-        <a id="xUser" href="#" class="w3-button w3-round-xlarge w3-theme-l1 w3-border link" target="_blank">X</a>
-        <br>
-        <a id="githubUser" href="#" class="w3-button w3-round-xlarge w3-theme-l1 w3-border link" target="_blank">Github</a>
-      </div>
-
-      <!-- Links section 2. Replace the # inside of the "" with your links. -->
-      <h4 class="margin-top-2" style="text-align: center;">MI EXPERIENCIA</h4>
-      <div class="links-container">
-        <a id="linkedinUser" href="#" class="w3-button w3-round-xlarge w3-theme-l1 w3-border link" target="_blank">LinkedIn</a>
-      </div>
-
-      <!-- Links section 3. Replace the # inside of the "" with your links. -->
-      <h4 class="margin-top-2" style="text-align: center;">MI BLOG</h4>
-      <div class="links-container">
-        <a id="website" href="#" class="w3-button w3-round-xlarge w3-theme-l1 w3-border link" target="_blank">Duvan Gonzalez</a>
-      </div>
-
-      <!-- Bottom section 3 -->
-      <div class="bottom margin-top-2 w3-padding w3-round">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
-        <span id="author" style="vertical-align: 7px;"> 2025 - Hecho por Duvan Gonzalez</span>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
-      </div>
-
+    <!-- Image and name container -->
+    <div style="text-align: center">
+      <p><span class="name" id="name">Hola, no funcionas</span></p>
+      <p style="font-weight: bolder;">¡Mira mis enlaces!</p>
     </div>
-    <script>
-      feather.replace()
-    </script>
-    <script type="text/javascript" src="requests.js"></script>
-  </body>  
+
+    <!-- Links section 1 -->
+    <h4 class="margin-top-2" style="text-align: center;">MIS REDES SOCIALES</h4>
+    <div class="links-container">
+      <a id="facebookLink" href="#" class="link" target="_blank">
+        <i data-feather="facebook"></i> Facebook
+      </a>
+      <a id="instagramUser" href="#" class="link" target="_blank">
+        <i data-feather="camera"></i> Instagram
+      </a>
+      <a id="xUser" href="#" class="link" target="_blank">
+        <i data-feather="twitter"></i> X
+      </a>
+      <a id="githubUser" href="#" class="link" target="_blank">
+        <i data-feather="github"></i> GitHub
+      </a>
+    </div>
+
+    <!-- Links section 2 -->
+    <h4 class="margin-top-2" style="text-align: center;">MI EXPERIENCIA</h4>
+    <div class="links-container">
+      <a id="linkedinUser" href="#" class="link" target="_blank">
+        <i data-feather="linkedin"></i> LinkedIn
+      </a>
+    </div>
+
+    <!-- Links section 3 -->
+    <h4 class="margin-top-2" style="text-align: center;">MI BLOG</h4>
+    <div class="links-container">
+      <a id="website" href="#" class="link" target="_blank">
+        <i data-feather="globe"></i> Duvan Gonzalez
+      </a>
+    </div>
+
+    <!-- Bottom section -->
+    <div class="bottom margin-top-2 w3-padding w3-round">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="feather feather-heart">
+        <path
+          d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+        </path>
+      </svg>
+      <span id="author" style="vertical-align: 7px;"> 2025 - Hecho por Duvan Gonzalez</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="feather feather-heart">
+        <path
+          d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+        </path>
+      </svg>
+    </div>
+
+  </div>
+
+  <script>
+    feather.replace()
+  </script>
+  <script type="text/javascript" src="requests.js"></script>
+</body>
 </html>
+
